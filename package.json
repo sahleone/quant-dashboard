@@ -1,0 +1,43 @@
+{
+  "name": "quant-dash-board-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:massive:script": "node --env-file=.env.local scripts/run-massive-smoke.mjs",
+    "db:clear": "node scripts/clearMongoCollections.mjs",
+    "verify:massive-reference": "node --env-file=.env.local scripts/verify-massive-reference.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "chart.js": "^4.5.1",
+    "chartjs-chart-treemap": "^3.1.0",
+    "cookie": "^1.1.1",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "next": "^16.2.4",
+    "p-limit": "^3.1.0",
+    "react": "19.2.4",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "19.2.4",
+    "snaptrade-typescript-sdk": "^9.0.178",
+    "validator": "^13.15.35"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  },
+  "overrides": {
+    "axios": "^1.12.0"
+  }
+}

@@ -1,0 +1,120 @@
+/* Stock Info page styles */
+
+.searchForm {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.searchInput {
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.searchBtn {
+  white-space: nowrap;
+}
+
+.profileCard {
+  margin-bottom: 1.5rem;
+}
+
+.profileHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.profileName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.profileTicker {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.profileExchange {
+  font-size: 0.8rem;
+  color: var(--color-text-dim);
+}
+
+.description {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-dim);
+}
+
+.statValue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.statLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.statLink:hover {
+  color: var(--color-primary-hover);
+}
+
+.addressLine {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.activeStatus {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.activeTrue {
+  background: rgba(0, 212, 170, 0.15);
+  color: var(--color-accent);
+}
+
+.activeFalse {
+  background: rgba(255, 77, 109, 0.15);
+  color: var(--color-danger);
+}
+
+.noResult {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}

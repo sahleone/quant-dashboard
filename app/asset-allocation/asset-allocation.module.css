@@ -1,0 +1,113 @@
+/* Asset Allocation page styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--color-text-muted);
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .sectionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+}
+
+.legendDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legendLabel {
+  flex: 1;
+  color: var(--color-text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.legendPct {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.noData {
+  color: var(--color-text-dim);
+  font-size: 0.875rem;
+}
+
+/* Treemap section */
+.treemapSection {
+  margin-bottom: 2rem;
+}
+
+.treemapTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+}
+
+.treemapTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.treemapTab {
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.treemapTab:hover {
+  color: var(--color-text);
+  background: var(--color-border);
+}
+
+.treemapTabActive {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.treemapTabActive:hover {
+  background: var(--color-primary-hover);
+}
