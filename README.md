@@ -4,7 +4,7 @@ A portfolio analytics dashboard built with Next.js 16 App Router. Track performa
 
 **Live demo:** https://quantdashboard-sigma.vercel.app
 
-**Demo credentials:** _will be added with the live URL. A throwaway account with sample brokerage data will be available so graders don't need to register._
+**Demo credentials:** will be added later.
 
 ## Features
 
